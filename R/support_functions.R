@@ -256,6 +256,17 @@ select_equation <- function(lower_bound = NULL, upper_bound = NULL) {
         message("The text entered is not numeric. Please try again.")
         resting_hr <- as.numeric(readline(prompt = "Please enter your resting heart rate. This will be used for calculating intensity ranges. "))
       }
+      
+      if(lower_bound == .57){
+        upper_bound <- .39
+        lower_bound <- .30
+      } else if (lower_bound == .64){
+        upper_bound <- .59
+        lower_bound <- .40
+      } else if (lower_bound == .77){
+        upper_bound <- .89
+        lower_bound <- .60
+      }
 
       hr_max <- 220 - age
       lower_bound_hr <- ((220 - age) - resting_hr) * lower_bound + resting_hr

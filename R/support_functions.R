@@ -177,7 +177,7 @@ enter_age <- function() {
 select_intensity <- function() {
   cat("Is this for light, moderate, or vigorous intensity exercise?
      Intensity ranges are in line with ACSM's Guidelines for Exercise Testing and Prescription (11th edition)\n")
-  selected_intensity <- utils::menu(title = "Select Intensity", choices = c("Light: 57-63% HRmax", "Moderate: 64-76% HRmax", "Vigorous: 77-95% HRmax"))
+  selected_intensity <- utils::menu(title = "Select Intensity", choices = c("Light: 57-63% HRmax; 30-39% HRR", "Moderate: 64-76% HRmax; 40-59% HRR", "Vigorous: 77-95% HRmax; 60-89% HRR"))
 
   # Mapping user choice to corresponding intensity
   #selected_intensity <- c("Light: 57-63% HRmax", "Moderate: 64-76% HRmax", "Vigorous: 77-95% HRmax")

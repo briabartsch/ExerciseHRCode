@@ -1,9 +1,11 @@
-Package: ExerciseHRCodePackage
-Title: What the Package Does (One Line, Title Case)
+Package: ExerciseHRCode
+Title: Package for working with Polar heart rate session data
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Bria", "Bartsch", , "bbartsch@kumc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Jonathan", "Clutton", , "jclutton@kumc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3593-4271"))
 Description: What the package does (one paragraph).
 License: CC BY 4.0
 Encoding: UTF-8
@@ -19,8 +21,8 @@ Imports:
     rio,
     utils,
     waldo
-URL: https://github.com/jclutton/ExerciseHRCodePackage
-BugReports: https://github.com/jclutton/ExerciseHRCodePackage/issues
+URL: https://github.com/briabartsch/ExerciseHRCode
+BugReports: https://github.com/briabartsch/ExerciseHRCode/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

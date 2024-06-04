@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 ExerciseHRCode provides an easy way to analyze exercise heart rate data
-from Polar for the purpose of:
+(saved as a CSV file) from Polar for the purpose of:
 
 1)  Increasing scientific rigor, reproducibility, and transparency when
     reporting exercise-based research
@@ -53,26 +53,65 @@ devtools::install_github("briabartsch/ExerciseHRCode")
 
 This is a basic example which shows you how to run the code:
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+The following image shows how to set-up your R Studio environment and
+run the ExerciseHRCode.
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+1)  “devtools” must be installed and loaded.
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+2)  “ExerciseHRCode” must be installed from GitHub.
 
-You can also embed plots, for example:
+3)  Run the code. Note: You will need to specify where you want the
+    output files to be saved (output_folder = “XX”) and if you want a
+    publication-style graph to be produced. If you want a
+    publication-style graph, set “publication_graph” to TRUE. If you do
+    not want a publication-style graph, set “publication_graph” to
+    FALSE.
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+![](images/Code%20to%20run.jpg)
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+When you run the code, a file window will automatically open, as shown
+below. Navigate to the location where you have your CSV file saved,
+select the file, and press open. The code will continue to run.
+
+![](images/Selection%20Window.jpg)
+
+You will now be brought through a series of interactive steps in the
+console, as shown below.
+
+1)  You will be asked to select your desired bin size. Type 1, 2, 3, or
+    4 into the console, and press enter.
+
+2)  You will be asked to select the exercise intensity. Type 1, 2, or 3
+    into the console, and press enter.
+
+3)  You will be asked to determine maximal heart rate. If you have a
+    predetermined heart rate that you would like to enter, type 1 into
+    the console, and press enter. You will then be asked to enter your
+    predetermined maximal heart rate. If you do not have a predetermined
+    heart rate, press 2, and enter.
+
+4)  If you did not enter a predetermined maximal heart rate, you will be
+    asked to select the equation you wish to use for determining maximal
+    heart rate. Type 1, 2, or 3 into the console, and press enter. For
+    all selections, you will be asked to enter age. For HRR, you will
+    also be asked to enter resting heart rate.
+
+5)  You will be provided with the maximal heart rate and heart rate
+    range in the console. You will also be told the path to where the
+    graph and summarized date file were saved.
+
+![](images/Console%20Selection%20Window.png)
+
+Below is an example of the export if you select “publication_graph =
+TRUE”
+
+![](images/HIIT%20publication%20graph.jpg)
+
+Below is an example of the export if you select “publication_graph =
+FALSE”
+
+![](images/HR%20graph.jpg)
+
+Below is an example of what the summarize data CSV will look like:
+
+![](images/File%20Screenshot.jpg)

@@ -40,12 +40,7 @@ library(devtools)
 devtools::install_github("briabartsch/ExerciseHRCode")
 ```
 
-## Example
-
-This is a basic example which shows you how to run the code:
-
-```{}
-```
+## Example of Running the Code and Output
 
 The following image shows how to set-up your R Studio environment and run the ExerciseHRCode.
 

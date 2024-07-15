@@ -30,7 +30,23 @@ The user is asked to select: 1) Whether the exercise intensity is light, moderat
 
 After completing the selection process in the console, the user will be provided with the maximum heart rate and heart rate intensity range. Two files will be exported to the output_folder filepath. One file will be a summarized_data CSV file with heart rate analyzed for each bin and total time spent in the intensity zone provided. The other file will be a JPG graph of the heart rate response during exercise with the target intensity zone highlighted. The JPG graph can be a black and white publication-ready graph or a color graph depending on what is prespecified in the code, i.e., publication_graph = TRUE or publication_graph = FALSE.
 
-## Installation
+## Downloading CSV from Polar
+
+1) Click on your exercise session.
+
+![](images/Polar 1.png){width="471"}
+
+2) Select "Export session."
+
+![](images/Polar 2.png){width="472"}
+
+3) Select "Session (CSV)."
+
+![](images/Polar 3.png){width="469"}
+
+## Installing ExerciseHRCode
+
+If you need to install R Studio and R, the downloads can be found at the following link: <https://posit.co/download/rstudio-desktop/>
 
 You can install the development version of ExerciseHRCodePackage from [GitHub](https://github.com/) with:
 
@@ -50,7 +66,7 @@ The following image shows how to set-up your R Studio environment and run the Ex
 
 3) Run the code. Note: You will need to specify where you want the output files to be saved (output_folder = "XX") and if you want a publication-style graph to be produced. If you want a publication-style graph, set "publication_graph" to TRUE. If you do not want a publication-style graph, set "publication_graph" to FALSE.
 
-Below, is an example of the entire code, including the "devtools" and "ExerciseHRCode" installations. *Note: This example is for running the code on a Mac. If you are using a Windows, you will need to replace the "*/*" slash in the output_folder line with the following two slashes: "*\\\\*". DO NOT change the slash in "briabartsch/ExerciseHRCode".*
+Below, is an example of the entire code, including the "devtools" and "ExerciseHRCode" installations. *Note: You can also specify the filepath for the output folder using the following approach (example): output_folder = file.path("C:","Users","briabartsch","Desktop","HR_Data")*
 
 ![](images/Code to run.jpg)
 

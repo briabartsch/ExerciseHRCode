@@ -38,7 +38,24 @@ publication-ready graph or a color graph depending on what is
 prespecified in the code, i.e., publication_graph = TRUE or
 publication_graph = FALSE.
 
-## Installation
+## Downloading CSV from Polar
+
+1)  Click on your exercise session.
+
+<img src="images/Polar%201.png" width="471" />
+
+2)  Select “Export session.”
+
+<img src="images/Polar%202.png" width="472" />
+
+3)  Select “Session (CSV).”
+
+<img src="images/Polar%203.png" width="469" />
+
+## Installing ExerciseHRCode
+
+If you need to install R Studio and R, the downloads can be found at the
+following link: <https://posit.co/download/rstudio-desktop/>
 
 You can install the development version of ExerciseHRCodePackage from
 [GitHub](https://github.com/) with:
@@ -71,10 +88,10 @@ run the ExerciseHRCode.
     FALSE.
 
 Below, is an example of the entire code, including the “devtools” and
-“ExerciseHRCode” installations. *Note: This example is for running the
-code on a Mac. If you are using a Windows, you will need to replace the
-“*/*” slash in the output_folder line with the following two slashes:
-“*\\*”. DO NOT change the slash in “briabartsch/ExerciseHRCode”.*
+“ExerciseHRCode” installations. *Note: You can also specify the filepath
+for the output folder using the following approach (example):
+output_folder =
+file.path(“C:”,“Users”,“briabartsch”,“Desktop”,“HR_Data”)*
 
 ![](images/Code%20to%20run.jpg)
 
